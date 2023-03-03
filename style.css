@@ -1,0 +1,136 @@
+:root {
+    --body-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --headings: 'PT Sans', sans-serif;
+}
+
+html {
+    font-size: 16 px;
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit
+}
+
+body{
+    font-family: var(--body-font);
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: var(--headings);
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Clases reutilizables */
+.contenedor {
+    max-width: 1024px;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header .contenedor {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;    
+}
+
+.logo__img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo__text {
+    font-family: var(--headings);
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.text__bold {
+    font-weight: 700;
+}
+
+.nav__list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav__link {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.nav__item:hover .nav__link {
+    color: aqua;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    background-image: url('https://images2.alphacoders.com/119/thumb-1920-1191759.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid red
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000061;
+}
+
+.hero .contenedor {
+    position: relative;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 1.75rem;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+/* Blog */
